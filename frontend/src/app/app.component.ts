@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TokenStrorageService } from 'src/services/token-strorage.service';
+import { TokenStrorageService } from 'src/app/services/token-strorage.service';
 
 @Component({
   selector: 'app-root',
