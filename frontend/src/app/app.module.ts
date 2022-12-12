@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { AdminBoardComponent } from './admin-board/admin-board.component';
 import { UserBoardComponent } from './user-board/user-board.component';
 import { ModBoardComponent } from './mod-board/mod-board.component';
+import { authInterceptorProviders } from './helpers/auth.interceptor.service';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,11 @@ import { ModBoardComponent } from './mod-board/mod-board.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
