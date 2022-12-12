@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TokenStrorageService } from 'src/app/services/token-strorage.service';
+import { TokenStorageService } from 'src/app/services/token-strorage.service';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +13,7 @@ export class AppComponent {
   showModeratorBoard = false;
   username?: string;
   title = 'frontend';
-constructor(private tokenStorageService : TokenStrorageService){}
+constructor(private tokenStorageService : TokenStorageService){}
 ngOnInit(): void {
   this.isLoggedIn = !!this.tokenStorageService.getToken();
 
