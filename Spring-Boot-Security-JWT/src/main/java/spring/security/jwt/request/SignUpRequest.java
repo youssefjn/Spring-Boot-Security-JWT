@@ -1,6 +1,5 @@
 package spring.security.jwt.request;
 
-import java.util.Set;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -23,6 +22,6 @@ public class SignUpRequest {
 	@Size (min = 6 , max = 120)
 	private String password;
 	
-	private Set<String> role ; 
+	private String roles ; 
 	
 }
