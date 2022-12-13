@@ -1,6 +1,8 @@
 <div class="grid h-screen place-items-center">
-    <div class="card card-container-md bg-gradient-to-t from-slate-100 to-transparent ... w-lg md:w-lg lg:w-lg">
-        <img id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="profile-img-card" />
+    <div class="card card-container-md bg-transparent w-lg md:w-lg lg:w-lg shadow-2xl ...">
+        <br>
+        <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace; color: gray;font-size: large;" > <b> Welcome Back !</b></h1>
+        <br>
         <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
             <div class="form-group">
                 <input type="text" class="form-control" name="username"placeholder="Username" aria-label="Username" [(ngModel)]="form.username" required
@@ -20,7 +22,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <button class="btn btn-primary btn-block">
+                <button class="hover:bg-blue-500 text-gray-600 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded ">
                     Login
                 </button>
             </div>
