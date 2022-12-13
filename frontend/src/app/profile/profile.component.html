@@ -1,5 +1,5 @@
 <div class=" grid h-screen grid-cols-6 gap-4" >
-<div class="col-start-2 col-span-4 ..." *ngIf="currentUser; else loggedOut">
+<div class="col-start-2 col-span-4 ..." *ngIf="isLoggedIn; else loggedOut">
    
       <h3>
         <strong>{{ currentUser.username }}</strong> Profile
