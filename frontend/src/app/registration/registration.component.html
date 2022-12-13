@@ -35,6 +35,14 @@
                     </div>
                 </div>
             </div>
+             <div class="form-group">
+                <input type="text" class="form-control"placeholder="Role" aria-label="Role" name="roles" [(ngModel)]="form.roles" required
+                    minlength="3" maxlength="20" #roles="ngModel" />
+                <div class="alert-danger" *ngIf="roles.errors && f.submitted">
+                    <div *ngIf="roles.errors['required']">Role is required</div>
+                  
+                </div>
+            </div>
             <div class="form-group">
                 <button class="btn btn-primary btn-block ">Sign Up</button>
             </div>
