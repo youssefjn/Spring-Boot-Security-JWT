@@ -1,7 +1,7 @@
 <div class="grid h-screen place-items-center">
     <div class="card w-50 bg-transparent shadow-2xl ...">
         <br>
-<h1 style="text-align: center; font-family: 'Courier New', Courier, monospace; color: gray;font-size: large;" > <b> Join the Stack Overflow community</b></h1>
+<p class="text-slate-50 hover:text-slate-300" style="text-align: center; font-family: 'Courier New', Courier, monospace;font-size: large;text-shadow: 2px 2px 8px #000000;" > <b> Join the Stack Overflow community</b></p>
 <br>
         <form *ngIf="!isSuccessful" name="form" (ngSubmit)="f.form.valid && onSubmit(f)" #f="ngForm" novalidate>
             <div class="form-group">
